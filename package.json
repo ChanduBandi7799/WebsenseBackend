@@ -28,6 +28,7 @@
     "cheerio": "^1.1.2",
     "dotenv": "^17.2.1",
     "lighthouse": "^12.8.1",
+    "puppeteer": "^24.17.1",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1",
     "wappalyzer": "^6.10.66"
