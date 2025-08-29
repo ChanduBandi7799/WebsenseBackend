@@ -15,7 +15,11 @@ async function bootstrap() {
     
     // Enable CORS
     app.enableCors({
-      origin: config.frontendUrl,
+      origin: [
+        config.frontendUrl,
+        /https:\/\/[a-z0-9-]+--.*vercel\.app$/, // Vercel preview domains
+        /https:\/\/.*vercel\.app$/
+      ],
       methods: ['GET', 'POST', 'PUT', 'DELETE'],
       credentials: true,
     });
